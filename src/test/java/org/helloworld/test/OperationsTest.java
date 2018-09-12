@@ -32,6 +32,12 @@ public class OperationsTest {
 		assertEquals(result , 100);
 	}
 	
+	@Test
+	public void divideTest() {
+		double result = op.divide(10.0, 5.0);
+		assertEquals(result, 2.0, 0.0);
+	}
+	
 	@After
 	public void tearDown() {
 		op = null;
